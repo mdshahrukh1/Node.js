@@ -1,0 +1,91 @@
+REPL
+----------------------
+Read
+Execute
+Print 
+Loop
+
+if you want to open Repl then type node command in cmd.
+
+meands read the statements one by one and evaluate it and print the same and loop until it reaches at last statement.
+
+
+Node 
+-----------------------------------
+Platformm/ runtime environment which running on Google Chromes V8 engine.
+
+where we can run Js code without tacking help of any HTML embadding.
+
+
+Package.json file
+-----------------------------
+Its a heart of your JS Project.
+When you start creating any project first of all create package.json file which includes files configuration details like name, description,
+version, author, licence, and details about all details about all installed dependencies in your project.
+
+how to create packafe.json file?
+
+execute commaand 
+>npm init
+
+It will popup with some few questions enter details and it will create package.json file.
+
+Defalut command 
+> npm init -y (-y means yes to create default package.json file)
+
+to install npm in Node 
+command 
+>npm install
+
+
+Node provide different types packages(libraries) which we can use to implement some already available functionalities.
+
+Inbuild Packages(http, os, fs, url, path etc..) no need to install, comes with node js.
+
+Local Packages: which we will install and we will use.
+
+Third Party Packages: which we  install for usage like mySql, express, mongodb etc...
+
+
+
+How to manage this third party packages installed?
+to manage we can use NPM (node package manager) using that we can manage instalation and uninstallion of packages locally and globally.
+
+let's understand the installation Process.
+
+we can install any package by execution 
+>npm install package-name or npm i package-name
+
+eg. npm install express or npm i express
+
+when this express is getting install it will update package.json file and your can the downloaded package name in package.json file.
+
+Also, it will create folder named node_modules where all the packages getting downloaded
+and also it will create package_lock.json file where it will show the exact location from where the library downloaded.
+
+>npm i nodemon
+
+check the updated package.json file
+
+Also, if you want to see the available package.
+>npm ls
+
+for package installing globally then use -g flag
+
+>npm i typescript -g
+
+Once it is installed you can check using
+
+>npm ls -g
+
+Uninstall how to?
+
+>npm uninstall express
+>npm uninstall nodemon
+
+How to uninstall globally installed package?
+>npm uninstall typescript -g
+
+check using ls command
+>npm ls  (you can also check package.json file)
+>npm ls -g
