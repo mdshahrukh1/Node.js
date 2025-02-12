@@ -1,0 +1,26 @@
+Http is the inbuilt mpdule of Node JS to create Server.
+
+createServer is the method of Http module which we are using to create our server.
+
+-- The callback function written is used to handle the request from the server which is coming from client.
+
+listen method is used to start a server, we are adding PORT to listen server to a particular PORT NO.
+
+Once it is started its callback functions called and you can see the message in the console.
+Once it is started you send request from your browser to localhost:PORT
+
+--------------------------------------------------------------------------
+
+                            MVC - MODEL VIEW CONTROLLER
+
+MODEL -> Structure of your data
+
+VIEW -> Visible to the user Presentation of your data.
+
+CONTROLLER -> Updated your model, show updated data to VIEW.
+
+--------------------------------------------------------------------------
+Express is Framework, Package, Library.
+
+REST -> Represetational State Transfer.
+API -> Application Programming Interface.
