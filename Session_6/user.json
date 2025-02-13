@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alex",
+      "email": "alex@gmail.com",
+      "country": "US"
+    },
+    {
+      "id": "2",
+      "name": "Azif",
+      "email": "asif@gmail.com",
+      "country": "India"
+    },
+    {
+      "id": 3,
+      "name": "Asif",
+      "email": "asif@gmail.com",
+      "country": "India"
+    }
+  ]
+}
