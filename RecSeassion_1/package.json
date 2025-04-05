@@ -1,0 +1,11 @@
+{
+  "name": "seassion-1",
+  "version": "1.0.0",
+  "description": "This webapp will allow users to book homestays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "md shahrukh",
+  "license": "ISC"
+}
