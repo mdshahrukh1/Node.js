@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+    let rawData = `{"name": "John Doe", "age": 27, "nationaliyt": "English", "cars": ["BMW", "Audi"]}`;
+    console.log(rawData);
+
+    let convertedData = JSON.parse(rawData);
+    console.log(convertedData);
+
+    let sendData = JSON.stringify(convertedData);
+    console.log(sendData);
+
+    //Set Time out & set Interval
+    function sayHello(){
+        console.log("Hello");
+    }
+
+    console.log("Before timeout");
+    let myTimeout = setTimeout(sayHello, 3000);
+    console.log("After timeout");
+
+    console.log("Before Interval");
+    let myInterval = setInterval(sayHello, 1000);
+    console.log("After Interval");
+
+
+    </script>
+</body>
+
+</html>

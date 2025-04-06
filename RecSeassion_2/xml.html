@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let data = {nmae:"John"};
+        
+        //State = 0
+        let myRequest = new XMLHttpRequest();
+
+        //State = 1
+        myRequest.open("GET", "https://randomuser.me/api", true);
+        // myRequest.open("POST", "https://randomuser.me/api", true); also we can use PUT, PATCH & DELETE Methods
+
+        //State = 2
+        myRequest.send();
+        // myRequest.send(JSON.stringify(data));
+
+        //State = 3 (Processing)
+
+        //State = 4
+        myRequest.onreadystatechange = () =>{
+            if(myRequest.readyState === 4 && myRequest.status === 200){ //myRequest.resdyState === XMLHttpRequest.DONE &&
+                //Functionality
+                console.log(myRequest.responseText);
+                console.log(JSON.parse(myRequest.responseText));
+            }
+        }
+    </script>
+</body>
+</html>
